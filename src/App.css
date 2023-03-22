@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+:root{
+  --primary-color: #33b843;
+  --secondary-color: #455b55;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+  background-color: transparent;
+  padding: 20px 0;
+  z-index: 20;
+  position: relative;
+}
+
+
+.navbarItems{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarItems h2 a{
+  color: var(--secondary-color);
+}
+
+
+.navLinks a{
+  margin: 0 15px;
+  color: var(--primary-color);
+  font-size: 1.05rem;
+  display: inline-block;
+  position: relative;
+}
+
+.navLinks a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navLinks a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hamburgerBtn{
+  display: none;
+}
+
+/* MOBILE NAVBAR */
+
+.mobileNav{
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 25;
+  padding: 20px;
+  position: absolute;
+  right: -100vw;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.mobileNavItems{
+  height: 100%;
+}
+
+.hideMobileNav{
+  text-align: right;
+}
+
+.hideMobileNav button{
+  background-color: transparent;
+  color: var(--primary-color);
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.mobileNavLinks{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.mobileNavLinks a{
+  color: var(--primary-color);
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+/* SHOWCASE */
+
+.showcase{
+  background: url('https://img.freepik.com/free-vector/line-luxury-gradient-color-minimalist-style-wave_483537-3954.jpg?w=2000&t=st=1679344675~exp=1679345275~hmac=891be970c7d3c5f930c6a9cdb85158016c5dc8214b5245ce5b94f00f90a05747');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.showcase::after{
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.showcaseItems{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.showcaseText{
+  text-align: center;
+  transform: translateY(-50px);
+  z-index: 2;
+}
+
+.showcaseItems h1{
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.showcaseItems h2{
+  font-size: 1.75rem;
+  color: var(--secondary-color);
+}
+
+/* ABOUT */
+
+.about{
+  padding-top: 50px;
+  height:100vh;
+  background: url('https://img.freepik.com/free-vector/line-luxury-gradient-color-minimalist-style-wave_483537-3951.jpg?w=2000&t=st=1679507903~exp=1679508503~hmac=f58e8aa2a869e3597dc04aa8ecb9f13b2a32c6decbaf1e27a07c3fb1d0820d03');
+  background-size: cover;
+  background-position: left;
+  color: #fff;
+  transform: rotate(180deg);
+}
+
+.about::after{
+  content: '';
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.aboutItems{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  transform: rotate(180deg);
+  z-index: 2;
+  position: relative;
+}
+
+.aboutImg{
+  margin-top: 50px;
+}
+
+
+.aboutImg .imgBg{
+  background-color: var(--secondary-color);
+  width: 400px;
+  height: 500px;
+  position: relative;
+  padding: 50px;
+}
+
+.aboutImg img{
+  width: 400px;
+  height: 500px;
+}
+
+.dotOne{
+  background-color: var(--secondary-color);
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  border-radius: 50%;
+  bottom: -100px;
+  left: 55%;
+}
+
+.dotTwo{
+  background-color: var(--secondary-color);
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  border-radius: 50%;
+  bottom: -100px;
+  left: 75%;
+}
+
+.dotThree{
+  background-color: var(--secondary-color);
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  border-radius: 50%;
+  bottom: -100px;
+  left: 95%;
+}
+
+.aboutText{
+  margin-top: 40px;
+}
+
+.aboutText h1{
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin: 20px 0;
+}
+
+.aboutText p{
+  line-height: 2;
+  font-size: 1.25rem;
+}
+
+.socialLinks{
+  margin-top: 20px;
+}
+
+.socialLinks a {
+  font-size: 2rem;
+  margin-right:15px;
+  color: var(--primary-color);
+}
+
+/* PROJECTS */
+
+.projects{
+  background:url('https://img.freepik.com/free-vector/line-luxury-gradient-color-minimalist-style-wave_483537-3954.jpg?w=2000&t=st=1679344675~exp=1679345275~hmac=891be970c7d3c5f930c6a9cdb85158016c5dc8214b5245ce5b94f00f90a05747') ;
+  background-size: cover;
+  color: var(--primary-color);
+  padding: 30px 40px;
+  position: relative;
+}
+
+.projects::after{
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.projectsHeader{
+  margin: 20px 0 40px 0;
+  font-size: 3rem;
+  color: var(--primary-color);
+  position: relative;
+  z-index: 2;
+}
+
+.project{
+  display: flex;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px auto;
+  z-index: 2;
+  position: relative;
+}
+
+.project img{
+  width: 400px;
+  margin:0 25px;
+}
+
+.projectText h1{
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.projectText p{
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.projectText p + p{
+  color: var(--secondary-color);
+  font-size: 1.05rem;
+}
+
+.projectText a{
+  color: var(--secondary-color);
+  margin: 0 5px;
+  font-size: 1.5rem;
+}
+
+/* SKILLS */
+
+.skills{
+  padding: 100px 0 40px 0;
+  color: #fff;
+  position: relative;
+  z-index: 5;
+}
+
+.skillsItems h1{
+  color: var(--primary-color);
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.skillsGrid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.outerBox{
+  background-color:var(--secondary-color) ;
+  margin: 20px 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.middleBox{
+  background-color: var(--primary-color);
+  padding: 5px;
+}
+
+.innerBox{
+  background-color: var(--secondary-color);
+  padding: 30px 10px;
+  font-size: 1.25rem;
+}
+
+
+
+/* UTILITY */
+
+.container{
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+  overflow: hidden;
+}
+
+/* MEDIA QUERIES */
+
+@media(max-width: 1068px){
+  .about{
+    height: 80vh;
+  }
+  
+  .aboutImg .imgBg{
+    width: 300px;
+    height: 400px;
+  }
+  
+  .aboutImg img{
+    width: 300px;
+    height: 400px;
+  }
+
+  .project{
+    flex-direction: column;
+  }
+
+  .projectImg{
+    text-align: center;
+  }
+
+}
+
+@media(max-width: 868px){
+  .about{
+    height: auto;
+    padding: 50px 0;
+  }
+
+  .aboutItems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutImg{
+    margin-bottom: 50px;
+  }
+
+  .project img{
+    width: 300px;
+    margin: 10px 0;
+  }
+
+}
+
+@media(max-width: 768px){
+  .navLinks{
+    display: none;
+  }
+
+  .hamburgerBtn{
+    display: block;
+    margin-top: 10px;
+  }
+
+  .hamburgerBtn button{
+    font-size: 1.75rem;
+    background-color: transparent;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+  } 
+
+  .project img{
+    width: 200px;
+    margin: 10px 0;
+  }
+
+  .mobileNav.show{
+    transform: translateX(-100vw);
+    opacity: 1;
+    pointer-events: all;
+    position: fixed;
+  }
+
+  .skillsGrid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 568px){
+  .skillsGrid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
