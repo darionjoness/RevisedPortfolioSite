@@ -169,7 +169,7 @@ a{
 .about{
   padding-top: 50px;
   height:100vh;
-  background: url('./components/images/oneWave.avif');
+  background: #000;
   background-size: cover;
   background-position: left;
   color: #fff;
