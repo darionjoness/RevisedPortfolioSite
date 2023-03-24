@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
-import Showcase from './components/Showcase'
 import About from './components/About'
 import Projects from './components/Projects'
 import MobileNav from './components/MobileNav'
@@ -23,8 +22,8 @@ function App() {
   return (
     <div className="App">
       <MobileNav hideMobileNav={hideMobileNav} toggleNav={toggleNav} toggleMobileNav={toggleMobileNav} />
-      <Showcase toggleNav={toggleNav} />
-      <About />
+      
+      <About toggleNav={toggleNav}/>
       <Projects />
     </div>
   )

@@ -16,7 +16,6 @@ const MobileNav = ({ toggleMobileNav, toggleNav, hideMobileNav }: MobileNavTypes
                 <button onClick={toggleNav}><AiFillCloseSquare /></button>
             </div>
             <div className="mobileNavLinks">
-                <a onClick={hideMobileNav} href="#showcase">Home</a>
                 <a onClick={hideMobileNav} href="#about">About</a>
                 <a onClick={hideMobileNav} href="#projects">Projects</a>
                 <a onClick={hideMobileNav} href="#skills">Skills</a>

@@ -2,10 +2,16 @@ import React from 'react'
 import aboutMe from './images/aboutMe.jpg'
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { GrMail } from "react-icons/gr";
+import Navbar from './Navbar';
 
-const About = () => {
+interface AboutTypes {
+    toggleNav: React.MouseEventHandler
+  }
+
+const About = ({ toggleNav }: AboutTypes) => {
   return (
     <div id='about' className='about'>
+        <Navbar toggleNav={toggleNav} />
         <div className="aboutItems container">
             <div className="aboutImg">
                 <div className="imgBg">

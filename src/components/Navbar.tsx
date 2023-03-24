@@ -15,7 +15,6 @@ const Navbar = ({ toggleNav }: NavbarTypes) => {
                 <h2><a href="">Darion Jones</a></h2>
             </div>
             <div className="navLinks">
-                <a href="#showcase">Home</a>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
