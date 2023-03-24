@@ -132,7 +132,7 @@ a{
   color: #fff;
 }
 
-/* .about::after{
+.about::after{
   content: '';
   background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
@@ -140,7 +140,7 @@ a{
   left: 0;
   height: 100%;
   width: 100%;
-} */
+} 
 
 .aboutItems{
   display: grid;
@@ -233,7 +233,7 @@ a{
   position: relative;
 }
 
-/* .projects::after{
+.projects::after{
   content: '';
   position: absolute;
   background-color: rgba(0, 0, 0, 0.4);
@@ -241,7 +241,7 @@ a{
   left: 0;
   height: 100%;
   width: 100%;
-} */
+} 
 
 .projectsHeader{
   margin: 20px 0 40px 0;
