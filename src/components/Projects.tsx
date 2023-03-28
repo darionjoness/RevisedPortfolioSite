@@ -60,18 +60,6 @@ const Projects = () => {
                     <img src={huluRebuild} alt="" />
                 </div>
             </div>
-            <div className="project">
-            <div className="projectImg">
-                    <img src={jungleJump} alt="" />
-                </div>
-                <div className="projectText">
-                    <h1>Jungle Jump</h1>
-                    <p>Jungle jump is a flappy bird style game where you have to use the space bar to jump through the jungle and make it as far as you can without touching the wooden beams. My highscore is 106. Try and see if you can beat it! </p>
-                    <p>Tech Used: HTML, CSS, Javascript</p>
-                    <a target={'_blank'} href="https://junglejumpp.netlify.app/"><AiFillEye /></a>
-                    <a target={'_blank'} href="https://github.com/darionjoness/JungleJump"><AiFillGithub /></a>
-                </div>
-            </div>
         </div>
         <Skills />
     </div>
