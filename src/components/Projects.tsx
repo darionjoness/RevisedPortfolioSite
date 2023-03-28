@@ -1,6 +1,6 @@
 import React from 'react'
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
-import cryptoprice from './images/cryptoprice.png'
+import cryptoprice from './images/cryptopricenew.png'
 import timsStore from './images/tims-store.png'
 import disneyPlusRebuild from './images/disneyPlusRebuild.png'
 import huluRebuild from './images/hulu.png'
@@ -18,7 +18,7 @@ const Projects = () => {
                 </div>
                 <div className="projectText">
                     <h1>CryptoPrice.io</h1>
-                    <p>CryptoPrice.io is a crypto app that shows the prices and charts of the selected coin. I used an api that updates every 24 hours to accurately show the current price. Browse through and find the coin you would like to view or search it up in the search bar. You can also view your own assets using the hamburger button in the top right.</p>
+                    <p>CryptoPrice.io is a crypto app that shows the prices and charts of the selected crypto. I used an api that updates every 24 hours to accurately show the current price. Browse through and find the coin you would like to view. You can also view your own assets using the hamburger button in the top left and you can add money to your account but you can't spend it. You can also view exchanges and plenty more.</p>
                     <p>Tech Used: React, Typescript</p>
                     <a target={'_blank'} href="https://cryptopriceio.netlify.app/"><AiFillEye /></a>
                     <a target={'_blank'} href="https://github.com/darionjoness/CryptoPriceApp"><AiFillGithub /></a>
