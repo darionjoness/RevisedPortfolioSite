@@ -79,10 +79,9 @@ a{
   background-color: #000;
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   z-index: 25;
   padding: 20px;
-  position: absolute;
   right: -100vw;
   opacity: 0;
   pointer-events: none;
@@ -130,6 +129,7 @@ a{
   background-size: cover;
   background-position: left;
   color: #fff;
+  width: 100%;
 }
 
 .about::after{
@@ -231,6 +231,7 @@ a{
   color: var(--primary-color);
   padding: 30px 40px;
   position: relative;
+  width: 100%;
 }
 
 .projects::after{
@@ -413,10 +414,15 @@ a{
     opacity: 1;
     pointer-events: all;
     position: fixed;
+    display: block;
   }
 
   .skillsGrid{
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projectText h1{
+    font-size: 1.5rem;
   }
 }
 
