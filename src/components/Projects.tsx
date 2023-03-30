@@ -48,18 +48,6 @@ const Projects = () => {
                     <a target={'_blank'} href="https://github.com/darionjoness/DisneyPlus-Rebuild"><AiFillGithub /></a>
                 </div>
             </div>
-            <div className="project">
-                <div className="projectText">
-                    <h1>Hulu Rebuild</h1>
-                    <p>This is a exact rebuild of the Hulu home page in February of 2023. Hulu changes there site often so it may not be the exact same to this day. </p>
-                    <p>Tech Used: React, Javascript</p>
-                    <a target={'_blank'} href="https://darionhulurebuild.netlify.app/"><AiFillEye /></a>
-                    <a target={'_blank'} href="https://github.com/darionjoness/HuluRebuild"><AiFillGithub /></a>
-                </div>
-                <div className="projectImg">
-                    <img src={huluRebuild} alt="" />
-                </div>
-            </div>
         </div>
         <Skills />
     </div>
